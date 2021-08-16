@@ -1,0 +1,23 @@
+module.exports = {
+  music_created: "Music added successfully",
+  music_not_created: "Problem occured during music creation",
+  music_update: "Music updated successfully",
+  music_update_error: "Music not updated",
+  music_details: "Music details",
+  service_not_found: "Music not authorised",
+  music_block: "Music blocked successfully",
+  music_not_block: "Music block not successfully",
+  blacklisted_word: "Blacklisted word",
+  blacklisted_word_add: "Blacklisted keyword added",
+  blacklisted_word_update: "Blacklisted keyword updated",
+  api_url_details: "API URL details",
+  config_updated: "Configuration Updated",
+  music_not_found: "Music list not found",
+  music_exist: "Music already exist",
+  music_activated: "Music activated successfully",
+  music_deactivated: "Music deactivated successfully",
+  music_not_updated: "Error in Update Music",
+  music_not_found_id: "Music not found",
+  music_get_genres: "Genre list",
+  genres_not_found: "Genre list not found"
+};

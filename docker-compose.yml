@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  db:
+    container_name: "axxs-db"
+    build: ./docker/db
+    ports:
+      - "13306:3306"
+    image: mysql:5.7
+    volumes:
+      - ./docker/db/scripts:/docker-entrypoint-initdb.d
+      - ./docker/db/data:/opt/db_data
+      - ./docker/db/mysql_data:/var/lib/mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: supersecretpass
+    networks:
+      - local
+
+volumes:
+    data-volume:
+
+networks:
+  local:
